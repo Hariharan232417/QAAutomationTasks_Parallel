@@ -64,7 +64,7 @@ public class MainPage_Netmeds extends ProjectHooks{
 		return this;
 	}
 	 
-	public MainPage_Netmeds get_AlternativesDetails_StoreInMap()
+	public MainPage_Netmeds get_AlternativesDetails_StoreInMap(String molecule)
 	{
 		mapWholeDetails_Molecule_MoleculeAlternativesText = getEachAlternativesText_StoreInMap(map_Molecule_AlternateText);
 		
@@ -72,7 +72,7 @@ public class MainPage_Netmeds extends ProjectHooks{
 		
 		reportStep("Successfully stored all details in a Map ","pass");
 		
-		writeAllResults_Excel(mapWholeDetails_Molecule_MoleculeAlternativesText);
+		writeAllResults_Excel(molecule, mapWholeDetails_Molecule_MoleculeAlternativesText);
 		
 		reportStep("Successfully written all datas to Excel by reading Map ","pass");
 		
@@ -80,9 +80,18 @@ public class MainPage_Netmeds extends ProjectHooks{
 	}
 
 	
-	public void writeAllResults_Excel(Map<String, Map<String, List<String>>> map) {
+	public void writeAllResults_Excel(String molecule, Map<String, Map<String, List<String>>> map) {
+		
+		String moleculeFileName_RemoveSlash=molecule;
+		if(molecule.contains("/"))
+		{
+			 moleculeFileName_RemoveSlash = molecule.replace("/", "_");
+		}
+		
 
-		String fileName = "./Data/AllResults.xlsx";
+		String fileName = "./Data/AllResults_"+moleculeFileName_RemoveSlash+".xlsx";
+
+		
 		FileInputStream in = null;
 		FileOutputStream outputStream = null;
 		XSSFWorkbook workbook = null;

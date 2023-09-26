@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Molecules">
+	<test name="OneMG" parallel="classes">
+		<parameter name="url" value="https://www.1mg.com/" />
+		<classes>
+			<class name="com.leaftaps.testcases.OneMg_CLINDAMYCIN600MG" />
+			<class name="com.leaftaps.testcases.OneMg_VANCOMYCIN1GM" />
+			<class name="com.leaftaps.testcases.OneMg_DOXYCYCLINE_100MG" />
+			<class name="com.leaftaps.testcases.OneMg_LINEZOLID_600MG300ML" />
+		</classes>
+	</test>
+	
+</suite>

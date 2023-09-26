@@ -10,6 +10,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -33,6 +34,7 @@ public class DriverInstance  extends AbstractTestNGCucumberTests{
 	public void setDriver(String browser, boolean headless) throws MalformedURLException {		
 		switch (browser) {
 		case "chrome":
+			
 					
 			ChromeOptions chrome_options = new ChromeOptions();
 			
