@@ -8,6 +8,8 @@
 			<class name="com.leaftaps.testcases.OneMg_VANCOMYCIN1GM" />
 			<class name="com.leaftaps.testcases.OneMg_DOXYCYCLINE_100MG" />
 			<class name="com.leaftaps.testcases.OneMg_LINEZOLID_600MG300ML" />
+			<class name="com,leaftaps.testcases.OneMg_TEICOPLANIN400MG" />
+			<class name="com,leaftaps.testcases.OneMg_MEROPENEM_1GM" />
 		</classes>
 	</test>
 	
