@@ -12,6 +12,7 @@ import com.framework.utils.ReadExcel;
 
 public class ProjectHooks extends SeleniumBase {
 
+	//,parallel = true
 	@DataProvider(name = "fetchData")
 	public Object[][] fetchData() throws IOException {
 		return ReadExcel.readExcelData(excelFileName);

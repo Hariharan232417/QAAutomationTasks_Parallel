@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Molecules" class="navigator-link">
-              <span class="suite-name border-skipped">Molecules</span>
+              <span class="suite-name border-passed">Molecules</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Molecules" class="navigator-link ">
-                    <span>C:\Users\Windows\eclipse-workspace\QATasks_DockerParallel\testngcommon.xml</span>
+                    <span>C:\Users\Windows\eclipse-workspace\QATasks_DockerParallel\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Molecules" class="hide-methods skipped suite-Molecules"> (hide)</a> <!-- hide-methods skipped suite-Molecules -->
-                      <a href="#" panel-name="suite-Molecules" class="show-methods skipped suite-Molecules"> (show)</a> <!-- show-methods skipped suite-Molecules -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Molecules" class="hide-methods passed suite-Molecules"> (hide)</a> <!-- hide-methods passed suite-Molecules -->
+                      <a href="#" panel-name="suite-Molecules" class="show-methods passed suite-Molecules"> (show)</a> <!-- show-methods passed suite-Molecules -->
                     </span>
-                    <div class="method-list-content skipped suite-Molecules">
+                    <div class="method-list-content passed suite-Molecules">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Molecules" title="com.leaftaps.testcases.OneMg_CommonTests" class="method navigator-link" hash-for-method="runTests(CEFTRIAXONE 1GM)">runTests(CEFTRIAXONE 1GM)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Molecules" title="com.leaftaps.testcases.Netmeds_MEROPENEM1GM" class="method navigator-link" hash-for-method="runTests">runTests</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Molecules -->
+                    </div> <!-- method-list-content passed suite-Molecules -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,44 +117,35 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Molecules" class="panel Molecules">
-          <div class="suite-Molecules-class-skipped">
+          <div class="suite-Molecules-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.leaftaps.testcases.OneMg_CommonTests</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.leaftaps.testcases.Netmeds_MEROPENEM1GM</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runTests(CEFTRIAXONE 1GM)">
-                  </a> <!-- runTests(CEFTRIAXONE 1GM) -->
+                  <a name="runTests">
+                  </a> <!-- runTests -->
                   <span class="method-name">runTests</span>
-                  <span class="parameters">(CEFTRIAXONE 1GM)</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.createNode(String)&quot; because the return value of &quot;java.lang.ThreadLocal.get()&quot; is null
-	at com.framework.utils.ExtentReporter.setNode(ExtentReporter.java:71)
-	at com.framework.testng.api.base.ProjectHooks.preCondition(ProjectHooks.java:24)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 12 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Molecules-class-skipped -->
+          </div> <!-- suite-Molecules-class-passed -->
         </div> <!-- panel Molecules -->
         <div panel-name="test-xml-Molecules" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Windows\eclipse-workspace\QATasks_DockerParallel\testngcommon.xml</span>
+            <span class="header-content">C:\Users\Windows\eclipse-workspace\QATasks_DockerParallel\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Molecules&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;OneMG&quot;&gt;
-    &lt;parameter name=&quot;url&quot; value=&quot;https://www.1mg.com/&quot;/&gt;
+  &lt;test parallel=&quot;classes&quot; name=&quot;OneMG&quot;&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://www.netmeds.com/&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.leaftaps.testcases.OneMg_CommonTests&quot;/&gt;
+      &lt;class name=&quot;com.leaftaps.testcases.Netmeds_MEROPENEM1GM&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- OneMG --&gt;
 &lt;/suite&gt; &lt;!-- Molecules --&gt;
@@ -197,13 +188,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runTests')
-data.setCell(0, 2, 'com.leaftaps.testcases.OneMg_CommonTests')
-data.setCell(0, 3, 1);
+data.setCell(0, 2, 'com.leaftaps.testcases.Netmeds_MEROPENEM1GM')
+data.setCell(0, 3, 677642);
 window.suiteTableData['Molecules']= { tableData: data, tableDiv: 'times-div-Molecules'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 ms</span>
+              <span class="suite-total-time">Total running time: 11 minutes</span>
               <div id="times-div-Molecules">
               </div> <!-- times-div-Molecules -->
             </div> <!-- times-div -->
@@ -229,44 +220,46 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.leaftaps.testcases.OneMg_CommonTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.leaftaps.testcases.Netmeds_MEROPENEM1GM</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">startReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">setValues</span>
-                <span class="method-start">133 ms</span>
+                <span class="method-start">144 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">140 ms</span>
+                <span class="method-start">150 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">startTestCase</span>
-                <span class="method-start">230 ms</span>
+                <span class="method-start">235 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">preCondition(https://www.1mg.com/)</span>
-                <span class="method-start">736 ms</span>
+                <span class="method-name">preCondition(https://www.netmeds.com/)</span>
+                <span class="method-start">278 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">runTests(CEFTRIAXONE 1GM)</span>
-                <span class="method-start">21526 ms</span>
+                <span class="method-name">runTests</span>
+                <span class="method-start">16379 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">694023 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
                 <span class="method-name">updateResult</span>
-                <span class="method-start">21529 ms</span>
+                <span class="method-start">699143 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">21870 ms</span>
+                <span class="method-start">699390 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">endResult</span>
-                <span class="method-start">21917 ms</span>
+                <span class="method-start">699430 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

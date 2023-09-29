@@ -1,22 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Molecules]" guice-stage="DEVELOPMENT">
-  <test parallel="methods" name="OneMG(failed)">
+  <test parallel="classes" name="OneMG(failed)">
     <parameter name="url" value="https://www.1mg.com/"/>
     <classes>
-      <class name="com.leaftaps.testcases.OneMg_CommonTests">
+      <class name="com.leaftaps.testcases.Hari.OneMg_AluminiumHydroxide">
         <methods>
+          <include name="postCondition"/>
           <include name="startTestCase"/>
           <include name="setUpClass"/>
-          <include name="setValues"/>
           <include name="updateResult"/>
-          <include name="runTests" invocation-numbers="0"/>
+          <include name="preCondition"/>
+          <include name="setValues"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.leaftaps.testcases.Hari.OneMg_AluminiumHydroxide -->
+      <class name="com.leaftaps.testcases.OneMg_Acebrophylline100MgNAcetylcysteine600Mg">
+        <methods>
+          <include name="postCondition"/>
+          <include name="setValues"/>
+          <include name="startTestCase"/>
+          <include name="setUpClass"/>
+          <include name="runTests"/>
+          <include name="updateResult"/>
           <include name="preCondition"/>
           <include name="tearDownClass"/>
           <include name="endResult"/>
           <include name="startReport"/>
         </methods>
-      </class> <!-- com.leaftaps.testcases.OneMg_CommonTests -->
+      </class> <!-- com.leaftaps.testcases.OneMg_Acebrophylline100MgNAcetylcysteine600Mg -->
+      <class name="com.leaftaps.testcases.OneMg_VANCOMYCIN1GM">
+        <methods>
+          <include name="postCondition"/>
+          <include name="startTestCase"/>
+          <include name="setUpClass"/>
+          <include name="setValues"/>
+          <include name="updateResult"/>
+          <include name="preCondition"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.leaftaps.testcases.OneMg_VANCOMYCIN1GM -->
+      <class name="com.leaftaps.testcases.Hari.OneMg_Ambroxol_Phenylephrine_Levocetirizine5Mg">
+        <methods>
+          <include name="postCondition"/>
+          <include name="startTestCase"/>
+          <include name="runTests"/>
+          <include name="setUpClass"/>
+          <include name="updateResult"/>
+          <include name="preCondition"/>
+          <include name="tearDownClass"/>
+          <include name="setValues"/>
+        </methods>
+      </class> <!-- com.leaftaps.testcases.Hari.OneMg_Ambroxol_Phenylephrine_Levocetirizine5Mg -->
     </classes>
   </test> <!-- OneMG(failed) -->
 </suite> <!-- Failed suite [Molecules] -->

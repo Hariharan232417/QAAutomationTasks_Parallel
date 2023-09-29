@@ -65,6 +65,8 @@ public abstract class ExtentReporter extends DriverInstance {
 		parent.assignAuthor(authors);
 		parentTest.set(parent);
 		testName.set(testcaseName);
+		
+		
 	}
 
 	public synchronized void setNode() {

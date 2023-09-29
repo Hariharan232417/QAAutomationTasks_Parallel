@@ -56,7 +56,14 @@ public class OneMG_MainPage extends ProjectHooks{
 		
 		int totalAlternatives = lst_AllAlternativesText.size();
 		
-		reportStep("Successfully scrolled till last Page. Total Alternatives - "+totalAlternatives,"pass");
+		if(totalAlternatives>0 && totalAlternatives<=500)		
+			reportStep("Successfully scrolled till last Page. Total Alternatives - "+totalAlternatives,"pass");
+		else
+		{
+			reportStep("Beyond or Below the threshold count. Total Alternatives - "+totalAlternatives,"fail");
+			throw new RuntimeException("Test aborted");
+		}
+			
 		
 		map_Molecule_AlternateText.put(molecule, lst_AllAlternativesText);
 		
